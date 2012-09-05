@@ -2,9 +2,10 @@
 
 var roman = require("./roman.js");
 
+
 exports.test_Converts1ToI = function(test) {
-	roman.convert(1, function(numeral) {
-		assert.Equals("I", numeral);
+	roman.convertToRomanNumerals(1, function(numeral) {
+		test.equal(numeral, "I");
 		test.done();
 	});
 };

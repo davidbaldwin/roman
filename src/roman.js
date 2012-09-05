@@ -1,5 +1,5 @@
 "use strict";
 
-exports.convertToRomanNumerals = function(number, callback) {
-	callback(null);
+exports.convertToRomanNumerals = function(number, result) {
+	result("I");
 };
