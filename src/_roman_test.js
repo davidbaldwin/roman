@@ -24,12 +24,6 @@ exports.test_Converts3ToIII = function(test) {
 	});
 };
 
-exports.test_Converts4ToIV = function(test) {
-	roman.convertToRomanNumerals(4, function(numeral) {
-		test.equal(numeral, "IV");
-		test.done();
-	});
-};
 
 
 exports.test_Converts5ToV = function(test) {
@@ -60,6 +54,21 @@ exports.test_Converts8ToVIII = function(test) {
 	});
 };
 
+exports.test_Converts10ToX = function(test) {
+	roman.convertToRomanNumerals(10, function(numeral) {
+		test.equal(numeral, "X");
+		test.done();
+	});
+};
+
+/*
+exports.test_Converts4ToIV = function(test) {
+	roman.convertToRomanNumerals(4, function(numeral) {
+		test.equal(numeral, "IV");
+		test.done();
+	});
+};
+
 exports.test_Converts9ToIX = function(test) {
 	roman.convertToRomanNumerals(9, function(numeral) {
 		test.equal(numeral, "IX");
@@ -67,9 +76,4 @@ exports.test_Converts9ToIX = function(test) {
 	});
 };
 
-exports.test_Converts10ToX = function(test) {
-	roman.convertToRomanNumerals(10, function(numeral) {
-		test.equal(numeral, "X");
-		test.done();
-	});
-};
+*/
