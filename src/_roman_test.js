@@ -23,3 +23,11 @@ exports.test_Converts3ToIII = function(test) {
 		test.done();
 	});
 };
+
+
+exports.test_Converts5ToV = function(test) {
+	roman.convertToRomanNumerals(5, function(numeral) {
+		test.equal(numeral, "V");
+		test.done();
+	});
+};
