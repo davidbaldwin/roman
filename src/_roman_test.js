@@ -38,3 +38,18 @@ exports.test_Converts6ToVI = function(test) {
 		test.done();
 	});
 };
+
+exports.test_Converts7ToVII = function(test) {
+	roman.convertToRomanNumerals(7, function(numeral) {
+		test.equal(numeral, "VII");
+		test.done();
+	});
+};
+
+exports.test_Converts8ToVIII = function(test) {
+	roman.convertToRomanNumerals(8, function(numeral) {
+		test.equal(numeral, "VIII");
+		test.done();
+	});
+};
+
