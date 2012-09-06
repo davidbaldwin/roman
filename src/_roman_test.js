@@ -60,6 +60,13 @@ exports.test_Converts8ToVIII = function(test) {
 	});
 };
 
+exports.test_Converts9ToIX = function(test) {
+	roman.convertToRomanNumerals(9, function(numeral) {
+		test.equal(numeral, "IX");
+		test.done();
+	});
+};
+
 exports.test_Converts10ToX = function(test) {
 	roman.convertToRomanNumerals(10, function(numeral) {
 		test.equal(numeral, "X");
