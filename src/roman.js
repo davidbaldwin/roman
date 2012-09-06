@@ -5,9 +5,9 @@ String.prototype.repeat = function(n) {
 };
 
 exports.convertToRomanNumerals = function(number, result) {
-	if (number === 5)
+	if (number >= 5)
 	{
-		result("V");
+		result("V" + "I".repeat(number - 5));
 	} else {
 		result("I".repeat(number));
 	}

@@ -31,3 +31,10 @@ exports.test_Converts5ToV = function(test) {
 		test.done();
 	});
 };
+
+exports.test_Converts6ToVI = function(test) {
+	roman.convertToRomanNumerals(6, function(numeral) {
+		test.equal(numeral, "VI");
+		test.done();
+	});
+};
