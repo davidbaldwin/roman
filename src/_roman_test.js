@@ -24,6 +24,13 @@ exports.test_Converts3ToIII = function(test) {
 	});
 };
 
+exports.test_Converts4ToIV = function(test) {
+	roman.convertToRomanNumerals(4, function(numeral) {
+		test.equal(numeral, "IV");
+		test.done();
+	});
+};
+
 
 exports.test_Converts5ToV = function(test) {
 	roman.convertToRomanNumerals(5, function(numeral) {
