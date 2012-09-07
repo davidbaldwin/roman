@@ -10,7 +10,6 @@ exports.test_Converts1ToI = function(test) {
 	});
 };
 
-/*
 exports.test_Converts2ToII = function(test) {
 	roman.convertToRomanNumerals(2, function(numeral) {
 		test.equal(numeral, "II");
@@ -67,7 +66,6 @@ exports.test_Converts11ToXI = function(test) {
 		test.done();
 	});
 };
-*/
 
 
 
