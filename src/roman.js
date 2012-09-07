@@ -6,7 +6,7 @@ String.prototype.repeat = function(n) {
     return new Array(1 + n).join(this);
 };
 
-function convertToChar(number, unit, char, text, result) {
+function convertToChar(number, unit, char, text, callback) {
 
 //console.log("N:" + number + " U:" + unit + " C:" + char + " T:" + text);
 
@@ -17,7 +17,7 @@ function convertToChar(number, unit, char, text, result) {
 		text = text + char.repeat(quot);
 	}
 
-	result(rem, text);
+	callback(rem, text);
 	
 }
 
