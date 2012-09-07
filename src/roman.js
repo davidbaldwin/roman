@@ -25,7 +25,22 @@ exports.convertToRomanNumerals = function(number, callback) {
 
 	async.waterfall([
 		function(callback){
-			convertToChar(number, 10, "X", "", function(number, text) {
+			convertToChar(number, 1000, "M", "", function(number, text) {
+				callback(null, number, text);
+			});
+		},
+		function(number, text, callback){
+			convertToChar(number, 100, "C", text, function(number, text) {
+				callback(null, number, text);
+			});
+		},
+		function(number, text, callback){
+			convertToChar(number, 50, "L", text, function(number, text) {
+				callback(null, number, text);
+			});
+		},
+		function(number, text, callback){
+			convertToChar(number, 10, "X", text, function(number, text) {
 				callback(null, number, text);
 			});
 		},

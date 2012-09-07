@@ -67,7 +67,33 @@ exports.test_Converts11ToXI = function(test) {
 	});
 };
 
+exports.test_Converts50ToL = function(test) {
+	roman.convertToRomanNumerals(50, function(numeral) {
+		test.equal(numeral, "L");
+		test.done();
+	});
+};
 
+exports.test_Converts100ToC = function(test) {
+	roman.convertToRomanNumerals(100, function(numeral) {
+		test.equal(numeral, "C");
+		test.done();
+	});
+};
+
+exports.test_Converts1000ToM = function(test) {
+	roman.convertToRomanNumerals(1000, function(numeral) {
+		test.equal(numeral, "M");
+		test.done();
+	});
+};
+
+exports.test_Converts2367ToMMCCCLXVII = function(test) {
+	roman.convertToRomanNumerals(2367, function(numeral) {
+		test.equal(numeral, "MMCCCLXVII");
+		test.done();
+	});
+};
 
 /*
 exports.test_Converts4ToIV = function(test) {
