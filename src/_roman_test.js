@@ -96,13 +96,15 @@ exports.test_Converts2367ToMMCCCLXVII = function(test) {
 };
 
 
-/*
+
 exports.test_Converts4ToIV = function(test) {
 	roman.convertToRomanNumerals(4, function(numeral) {
 		test.equal(numeral, "IV");
 		test.done();
 	});
 };
+
+/*
 
 exports.test_Converts9ToIX = function(test) {
 	roman.convertToRomanNumerals(9, function(numeral) {
