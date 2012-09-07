@@ -23,10 +23,10 @@ exports.convertToRomanNumerals = function(number, result) {
 
 	var text ="";
 
-	convertToChar(number, 10, "X", text, function(number2, text2) {
-		convertToChar(number2, 5, "V", text2, function(number3, text3) {
-			convertToChar(number3, 1, "I", text3, function(number4, text4) {
-				result(text4);
+	convertToChar(number, 10, "X", text, function(number, text) {
+		convertToChar(number, 5, "V", text, function(number, text) {
+			convertToChar(number, 1, "I", text, function(number, text) {
+				result(text);
 			});
 		});
 	});
