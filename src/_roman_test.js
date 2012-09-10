@@ -104,7 +104,6 @@ exports.test_Converts4ToIV = function(test) {
 	});
 };
 
-/*
 
 exports.test_Converts9ToIX = function(test) {
 	roman.convertToRomanNumerals(9, function(numeral) {
@@ -112,5 +111,3 @@ exports.test_Converts9ToIX = function(test) {
 		test.done();
 	});
 };
-
-*/
