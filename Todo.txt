@@ -4,6 +4,5 @@ To Do on current task:
 - Replace convertToChar, need to add tests first!!!
 
 Future ideas:
-- Install Webstorm
 - Reduce test verbosity. Is there an equiv of the TestCase att in NUnit?
 
